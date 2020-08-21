@@ -1,0 +1,68 @@
+.about
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-top: 30px
+    padding: 100px 0
+    border-top: 1px solid $hover
+.content
+  width: 70%
+  &__title
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+  &__tabname
+    margin: 0 20px
+    cursor: pointer
+    &:hover
+      color: $hover
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+  &__tabs
+    display: none
+    &-title
+      width: 10%
+      margin-bottom: 10px
+    &-text
+      font-family: 'Caveat', cursive
+      width: 90%
+      text-align: justify
+  .visible
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-direction: column
+    visibility: visible
+.active
+  font-weight: bold
+.sidebar
+  width: 29%
+  &__title
+    margin-bottom: 20px
+  &__tabname
+    margin: 0 20px
+    cursor: pointer
+    &:hover
+      color: $hover
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+  &__tabs
+    display: none
+    &-title
+      margin-bottom: 30px
+    &-content
+      display: flex
+      flex-direction: column
+    &-item
+      margin-bottom: 20px
+  .visible
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-direction: column
+    visibility: visible

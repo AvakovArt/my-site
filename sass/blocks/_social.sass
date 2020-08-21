@@ -1,0 +1,56 @@
+.social
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 5px
+  &__logo
+    width: 200px
+    height: 200px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: 50%
+  &__content
+    display: flex
+    flex-direction: column
+    padding: 10px 40px
+    flex: auto 
+  &__title
+    font-size: 30px
+    line-height: 40px
+    margin-bottom: 15px
+  &__subtitle
+    font-size: 20px
+    line-height: 35px
+    margin-bottom: 45px
+  &__list
+    display: flex
+    align-items: center
+  &__item
+    margin: 0 15px
+    &:first-child
+      margin-left: 0
+  &__link
+    font-size: 30px
+    color: $text-color
+    transition: 0.5s
+    &:hover
+      color: $hover
+  &__button
+    font-family: 'Open Sans', sans-serif
+    font-size: 16px
+    line-height: 30px
+    padding: 10px 30px
+    border-radius: 8px
+    border: none
+    background-color: #3AE2CE
+    color: $bg-color
+    cursor: pointer
+    transition: 0.5s
+    outline: none
+    &:hover
+      background-color: $hover
+  &__icon
+    margin-right: 15px
