@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/* общие переменные */
+/* общие настройки */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #183B56;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* стили для хэдера */
+/*# sourceMappingURL=style.css.map */
