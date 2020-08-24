@@ -263,7 +263,7 @@ a {
   font-family: 'Caveat', cursive;
   width: 90%;
   text-align: justify;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 30px;
 }
 
@@ -353,6 +353,141 @@ a {
   visibility: visible;
 }
 
+/* стили для портфолио */
+.portfolio-wrapper {
+  padding: 75px 0;
+  border-top: 1px solid #FFE600;
+}
+
+.portfolio__head {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.portfolio__title {
+  font-size: 24px;
+}
+
+.portfolio-content__title {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.portfolio-content__slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-content__slide {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio-content__slide:first-child {
+  margin-left: 0;
+}
+
+.portfolio-content__slide:last-child {
+  margin-right: 0;
+}
+
+.portfolio-content__item {
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.portfolio-content__image {
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.portfolio-content__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio-content__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  top: 5%;
+  right: 0;
+  left: 0;
+}
+
+.portfolio-content__button--next {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  right: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.portfolio-content__button--next:hover {
+  border: 1px solid #FFE600;
+  color: #FFE600;
+}
+
+.portfolio-content__button--prev {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.portfolio-content__button--prev:hover {
+  border: 1px solid #FFE600;
+  color: #FFE600;
+}
+
 /* стили для подвала */
 .footer-wrapper {
   display: -webkit-box;
@@ -399,6 +534,12 @@ a {
 
 .footer__link {
   font-size: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__link:hover {
+  color: #FFE600;
 }
 
 .footer__input {

@@ -16,6 +16,37 @@ $(document).ready(function () {
     $(".sidebar__tabs").removeClass("visible");
     $(activeTabContent).toggleClass("visible");
   });
+  const tabPort = $(".tab-portfolio");
+  tabPort.on("click", function () {
+    tabPort.removeClass("active");
+    $(this).toggleClass("active");
+    let activeTabContent = $(this).attr("data-target");
+    $(".portfolio-content__tabs").removeClass("visible");
+    $(activeTabContent).toggleClass("visible");
+  });
+  var sliderOne = new Swiper(".portfolio-content__slider", {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 3,
+    autoHover: true,
+    navigation: {
+      nextEl: ".portfolio-content__button--next",
+      prevEl: ".portfolio-content__button--prev",
+    },
+    autoplay: {
+      delay: 7000,
+    },
+    on: {
+      init() {
+        this.el.addEventListener("mouseenter", () => {
+          this.autoplay.stop();
+        });
+        this.el.addEventListener("mouseleave", () => {
+          this.autoplay.start();
+        });
+      },
+    },
+  });
   // $(".form").each(function () {
   //   $(this).validate({
   //     errorClass: "invalid",

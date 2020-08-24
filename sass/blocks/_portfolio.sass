@@ -1,0 +1,77 @@
+.portfolio
+  &-wrapper
+    padding: 75px 0
+    border-top: 1px solid $hover
+  &__head
+    text-align: center
+    margin: 0 0 20px 0
+  &__title
+    font-size: 24px
+  &-content
+    &__title
+      font-size: 18px
+      line-height: 30px
+      margin-bottom: 20px
+    &__slider
+      position: relative
+      overflow: hidden
+    &__slide
+      width: 350px
+      display: flex
+      justify-content: center
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+    &__item
+      max-width: 350px  
+      display: flex
+      flex-direction: column
+      margin: 0 10px
+      cursor: pointer
+    &__image
+      margin-bottom: 20px
+      border-radius: 8px
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__buttons
+      display: flex
+      justify-content: space-between
+      position: absolute
+      z-index: 1
+      top: 5%
+      right: 0
+      left: 0
+    &__button
+      &--next
+        width: 30px
+        height: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 1px solid $text-color
+        border-radius: 50%
+        right: 0
+        transition: 0.5s
+        cursor: pointer
+        color: $text-color
+        &:hover
+          border: 1px solid $hover
+          color: $hover
+      &--prev
+        width: 30px
+        height: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 1px solid $text-color
+        border-radius: 50%
+        left: 0
+        transition: 0.5s
+        cursor: pointer
+        color: $text-color
+        &:hover
+          border: 1px solid $hover
+          color: $hover
