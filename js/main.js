@@ -46,6 +46,35 @@ $(document).ready(function () {
         });
       },
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 5,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1090: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  $(".social__btn").on("click", function () {
+    $(".overlay").show();
+  });
+  $(".popup__close").on("click", function () {
+    $(".overlay").hide();
+  });
+  $('[data-toggle="tooltip"]').tooltip();
+  $(".navbar__burger").click(function (event) {
+    $(".navbar__burger,.navbar__list").toggleClass("open");
+    $("body").toggleClass("lock");
   });
   // $(".form").each(function () {
   //   $(this).validate({
