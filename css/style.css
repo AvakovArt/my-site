@@ -1041,6 +1041,9 @@ a {
   .footer__button {
     width: 90%;
   }
+  .popup {
+    width: 85%;
+  }
 }
 
 @media (max-width: 320px) {
