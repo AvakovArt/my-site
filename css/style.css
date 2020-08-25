@@ -991,6 +991,9 @@ a {
   .portfolio-content__item {
     width: 100%;
   }
+  .social {
+    margin-top: 90px;
+  }
   .social-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1006,6 +1009,12 @@ a {
   .social__content {
     width: 100%;
     padding: 0;
+  }
+  .social__subtitle {
+    margin-bottom: 20px;
+  }
+  .social__list {
+    margin-bottom: 10px;
   }
   .sidebar__tabname {
     margin: 0 10px;
