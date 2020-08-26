@@ -133,10 +133,6 @@ a {
   transition: 0.5s;
 }
 
-.navbar__link:hover {
-  color: #FFE600;
-}
-
 .navbar__burger {
   display: none;
 }
@@ -280,12 +276,17 @@ a {
 }
 
 .content__tabname {
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
   margin: 0 20px;
   cursor: pointer;
 }
 
 .content__tabname:hover {
   color: #FFE600;
+  font-weight: normal;
 }
 
 .content__tabname:first-child {
@@ -301,7 +302,10 @@ a {
 }
 
 .content__tabs-title {
-  width: 10%;
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
   margin-bottom: 10px;
 }
 
@@ -332,7 +336,6 @@ a {
 
 .active {
   color: #FFE600;
-  font-weight: bold;
 }
 
 .sidebar {
@@ -344,7 +347,10 @@ a {
 }
 
 .sidebar__tabname {
-  margin: 0 20px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 10px;
   cursor: pointer;
 }
 
@@ -365,6 +371,10 @@ a {
 }
 
 .sidebar__tabs-title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
   margin-bottom: 30px;
 }
 
