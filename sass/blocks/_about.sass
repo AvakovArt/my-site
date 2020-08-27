@@ -11,21 +11,21 @@
   &__title
     display: flex
     align-items: center
-    margin-bottom: 20px
+    margin-bottom: 30px
   &__tabname
     font-family: 'Roboto Slab', serif
     font-weight: normal
     font-size: 18px
     line-height: 20px
-    margin: 0 20px
     cursor: pointer
+    text-align: center
+    width: 30%
     &:hover
       color: $hover
       font-weight: normal
-    &:first-child
-      margin-left: 0
-    &:last-child
-      margin-right: 0
+    &:nth-child(2n)
+      border-right: 1px solid $hover
+      border-left: 1px solid $hover
   &__tabs
     display: none
     &-title
